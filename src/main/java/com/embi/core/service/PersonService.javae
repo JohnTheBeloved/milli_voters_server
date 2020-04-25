@@ -1,0 +1,22 @@
+package com.embi.core.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.embi.core.dao.PersonDao;
+import com.embi.core.model.Person;
+import com.embi.core.service.PersonServiceImpl;
+
+@Service
+public class PersonServiceImpl implements PersonService {
+
+	@Autowired
+	private PersonDao PersonDao;
+
+	public List getPersonDetails() {
+		return PersonDao.getPersonDetails();
+	}
+
+}
