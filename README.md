@@ -1,23 +1,14 @@
-# embi-person-management
+# milli-voters-server
 
 
 ## About this Project
 
-This project is a simple application written as a test assesement of technical abilities of Senior Java Developers for  European Bioinformatics Institute by John Alade.
+Java application written as the backend server for tht milli-voters app.
 
 For more information please contact John by mailing [topzy20@yahoo.com](topzy20@yahoo.com)
 
-## Problem Solved
-The project was written as a solution to the hacker rank interview question. The technologies used were selected by me since no specific technology stack was specified in the question as it was specified as subjective.
-
-## Technologies used
-* Back end Technology : Java  (Springboot, Hibernate, h2 memory database)
-* Frontend : ReactJS framework 
-* the source can be found in *reactjs_frontend* folder
-
 ### System Requirements
   * Java 8 or higher,
-  * Node 8 or higher
 
 ### Building the Frontend Application
   * Clone this repository: git clone https://github.com/JohnTheBeloved/embi-person-mngmt.git 

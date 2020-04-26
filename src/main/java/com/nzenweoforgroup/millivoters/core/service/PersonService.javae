@@ -1,0 +1,22 @@
+package com.nzenweoforgroup.millivoters.core.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nzenweoforgroup.millivoters.core.dao.PersonDao;
+import com.nzenweoforgroup.millivoters.core.model.Person;
+import com.nzenweoforgroup.millivoters.core.service.PersonServiceImpl;
+
+@Service
+public class PersonServiceImpl implements PersonService {
+
+	@Autowired
+	private PersonDao PersonDao;
+
+	public List getPersonDetails() {
+		return PersonDao.getPersonDetails();
+	}
+
+}

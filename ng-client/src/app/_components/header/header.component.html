@@ -1,0 +1,38 @@
+   <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <img src="/assets/images/menu.svg" />
+    </span>
+    <a href="#" class="logo">
+      <img src="/assets/images/logo.png" alt="Logo" />
+    </a>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">Templates</a>
+      </li>
+
+      <li>
+        <a href="#" class="nav-links">Features</a>
+      </li>
+
+      <li>
+        <a href="#" class="nav-links">How it works?</a>
+      </li>
+
+      <li>
+        <a href="#" class="nav-links">Pricing</a>
+      </li>
+
+      <li *ngIf="!currentUser || !currentUser.token">
+        <button class="sec-button">
+          <a href="/login" class="nav-links">Login </a>
+        </button>
+      </li>
+
+      <li *ngIf="!currentUser || !currentUser.token">
+        <a href="/register" class="nav-links">Sign up</a>
+      </li>
+      <li *ngIf="currentUser && currentUser.token">
+        <a (click)="onSignOut()" href="#" class="nav-links">Sign out</a>
+      </li>
+    </ul>
+  </nav>

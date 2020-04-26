@@ -8,11 +8,11 @@
 		<version>2.2.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.embi</groupId>
-	<artifactId>embi-core</artifactId>
+	<groupId>com.nzenweoforgroup.millivoters</groupId>
+	<artifactId>millivoters</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>embi core</name>
-	<description>Rest API for EMBI entities</description>
+	<description>Rest API for Millivoters application</description>
 
 	<properties>
 		<java.version>1.8</java.version>

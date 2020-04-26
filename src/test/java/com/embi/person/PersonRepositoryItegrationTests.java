@@ -1,4 +1,4 @@
-package com.embi.person;
+package com.nzenweoforgroup.millivoters.person;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -8,9 +8,9 @@ import java.util.Optional;
 
 import javax.transaction.Transactional;
 
-import com.embi.core.PersonApplication;
-import com.embi.core.model.Person;
-import com.embi.core.repository.PersonRepository;
+import com.nzenweoforgroup.millivoters.core.MilliVotersApp;
+import com.nzenweoforgroup.millivoters.core.model.Person;
+import com.nzenweoforgroup.millivoters.core.repository.PersonRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.junit.runner.RunWith;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = PersonApplication.class)
+@SpringBootTest(classes = MilliVotersApp.class)
 @AutoConfigureTestEntityManager
 class PersonRepositoryIntegrationTest {
 
